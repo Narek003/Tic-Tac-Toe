@@ -7,41 +7,56 @@
 body{
     background-image: url("https://img.poki.com/cdn-cgi/image/quality=78,width=600,height=600,fit=cover,f=auto/b72f31aa574acaa5cbf6b6c69104c988.png");
 }
+.backDiv{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
 .game{
     width: 1140px;
     margin: 50px auto;
     display: flex;
     background-color: #755134;
-    border: 2px solid #000;
     box-shadow: 10px 15px 40px 30px rgb(0, 0, 0);
 }
-.game > div {   
+.xPart, .oPart{   
     flex-basis: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #3d2b1b;
+    transition: all 1.5s;
+}
+.gameTable{
+    position: relative;
+    flex-basis: 50%;
 }
 table{
     border-collapse: collapse;
-    flex-basis: 50%;
+    width: 100%;
     height: 600px;
     text-align: center;
-    
+
 }
 table td{
     width: 33.3%;
     height: 33.3%;
     color: red;
     font-size: 80px;
-    border: 1px solid #000;
 }
 #id00,#id02,#id11, #id20, #id22{
     background-color: #f7bc88;
 }
 #xH{
+    text-shadow: 5px 8px 12px #000;
     color: #22df13;
+    transition: all 1.5s ease;
 }
 #oH{
+    text-shadow: 5px 8px 12px #000;
     color: red;
+    transition: all 1.5s;
 }
